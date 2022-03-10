@@ -94,17 +94,17 @@ body a {
 }
 
 .top_section_inner {
-  
   height: 350px;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .top_icon {
   position: absolute;
   bottom: -1%;
   left: 5%;
-  margin-top: 50px;
+  padding-top: 50px;
 }
   
 .top_text {
@@ -125,7 +125,7 @@ body a {
   width: 510px;
   height: 100px;
   color: white;
-  margin-top: 35px;
+  padding-top: 35px;
 }
 
 /* Article */
