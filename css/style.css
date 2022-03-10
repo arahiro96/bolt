@@ -31,6 +31,7 @@ body a {
   top: 0;
   left: 0;
   background-color: white;
+  z-index: 1;
 }  
 
 .header_button_parent {
@@ -69,7 +70,7 @@ body a {
 }
 
 .theme_inner {
-  height: 600px;
+  height: 660px;
   text-align: center;
 }
 
@@ -109,7 +110,7 @@ body a {
   
 .top_text {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 45%;
   text-align: center;
   word-break: break-all;
@@ -188,7 +189,6 @@ body a {
   font-size: 20px;
   color: #333;
   margin-left: 80px;
-  font-weight: lighter;
 }
   
 .article_link {
@@ -221,6 +221,7 @@ body a {
   color: white;
   padding-top: 70px;
   padding-bottom: 70px;
+  font-size: 24px;
 }
 
 .icon_text {
@@ -249,6 +250,7 @@ body a {
 .sns_inner {
   height: 100%;
   text-align: center; 
+  font-size: 0;
 }
   
 .nav_icon {
@@ -266,10 +268,6 @@ body a {
 .nav_icon:hover {
   background-color: white;
 }
-
-/* .nav_icon:first-child {
-  margin-left: 0;
-} */
 
 /* フッター */
 .footer {
