@@ -7,10 +7,8 @@
   font-family: 'Lato';
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+main {
+  padding-top: 70px;
 }
 
 .inner {
@@ -25,27 +23,28 @@ body a {
 /* ヘッダー */
 .header {
   width: 100%;
-  vertical-align: middle;
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   background-color: white;
   z-index: 1;
-}  
-
-.header_button_parent {
-  float: right;
-  margin-top: 20px;
 }
-  
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .header_button {
+  display: inline-block;
   font-size: 12px;
   padding: 14px 12px;
   background-color: #74cfae;
   color: white;
-  transition: all .3s;
-  
+  transition: all .3s; 
 }
 
 .header_button:hover {
@@ -53,9 +52,7 @@ body a {
 }
 
 .header_icon_parent {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  float: left;
+  
 }
   
 .header_icon {
@@ -70,21 +67,21 @@ body a {
 }
 
 .theme_inner {
-  height: 660px;
   text-align: center;
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 .theme_h1 {
   font-size: 90px;
   font-weight: 700;
-  color: #74cfae;
-  padding-top: 250px;
+  color: #74cfae; 
 }
 
 .theme_h2 {
   font-size: 30px;
   color: #c0c0c0;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 /* トップセクション */
@@ -95,25 +92,20 @@ body a {
 }
 
 .top_section_inner {
-  height: 350px;
   display: flex;
-  position: relative;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
 }
 
 .top_icon {
-  position: absolute;
-  bottom: -1%;
-  left: 5%;
-  padding-top: 50px;
+  font-size: 0;
 }
   
 .top_text {
-  position: absolute;
-  top: 20%;
-  left: 45%;
-  text-align: center;
-  word-break: break-all;
+ text-align: center;
+ margin-left: 120px;
+ margin-bottom: 90px;
 }
   
 .top_text_h1 {
@@ -126,7 +118,7 @@ body a {
   width: 510px;
   height: 100px;
   color: white;
-  padding-top: 35px;
+  margin-top: 35px;
 }
 
 /* Article */
@@ -136,20 +128,21 @@ body a {
 }
 
 .article_inner { 
-  height: 1010px;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .article_text {
   display: inline-block;
   font-size: 24px;
-  padding-top: 60px;
-  padding-bottom: 40px;
 }
+
 .article_imgs {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
    
 .img {
@@ -170,36 +163,30 @@ body a {
   margin-left: 0;
 }
 
-.img:nth-child(-n+3) {
-  margin-bottom: 80px;
-}
-
-.img:nth-last-child(-n+4) {
-  margin-bottom: 90px;
+.img:nth-child(n+4) {
+  margin-top: 80px;
 }
 
 .article_footer {
   display: flex; 
-  padding-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
 }
   
 .article_footer_text {
-  word-break: break-all;
-  float: left;
   font-size: 20px;
+  width: 45%;
   color: #333;
-  margin-left: 80px;
 }
   
 .article_link {
-  display: block;
-  float: right;
+  display: inline-block;
   font-size: 12px;
   background-color: #74cfae;
   color:white;
   padding: 14px 20px;
-  margin-right: 180px; 
-  margin-left: 90px; 
+  margin-left: 90px;
   transition: all .3s; 
 }
 
@@ -210,24 +197,24 @@ body a {
 /* ボトムセクション */
 .bottom_section {
   width: 100%;
-  background-color: #4e4e4e;
+  background-color: #4e4e4e;  
 }
 
 .bottom_section_inner {
- text-align: center;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
 }
   
 .bottom_section_text {
   color: white;
-  padding-top: 70px;
-  padding-bottom: 70px;
   font-size: 24px;
 }
 
 .icon_text {
   display: inline-block;
   margin-left: 180px;
-  padding-bottom: 100px;
+  margin-top: 70px;
 }
 
 .icon_text:first-child {
@@ -251,6 +238,8 @@ body a {
   height: 100%;
   text-align: center; 
   font-size: 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
   
 .nav_icon {
@@ -260,9 +249,7 @@ body a {
   width: 185px;
   height: 100px;
   color: #74cfae; 
-  transition: all .3s;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  transition: all .3s; 
 }
 
 .nav_icon:hover {
@@ -272,16 +259,19 @@ body a {
 /* フッター */
 .footer {
   width: 100%;
+  background-color: #74cfae; 
+}
+
+.footer_inner {
   text-align: right;
-  background-color: #74cfae;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-right: 10px;
 }
 
 .footer_text {
   color: white;
-  font-size: 12px;
-  padding-top: 20px;
-  padding-bottom: 25px;
-  padding-right: 10px;
+  font-size: 12px; 
 }
   
  
